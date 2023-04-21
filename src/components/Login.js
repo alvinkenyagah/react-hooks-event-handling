@@ -3,7 +3,8 @@ import React from "react";
 function Login() {
   function handleSubmit(event) {
     event.preventDefault();
-    console.log("I submit");
+    const username = event.target.elements.username.value;
+    console.log(username);
   }
 
   return (
